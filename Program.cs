@@ -12,8 +12,9 @@ namespace DIConsoleApp
             services.AddSingleton<UserApplication>();
             var serviceProvider = services.BuildServiceProvider();
             var userAppService = serviceProvider.GetService<UserApplication>();
-            userAppService.AddUser("John");
-            userAppService.AddUser("Sunny");
+            userAppService.AddUser("KCM");
+            userAppService.AddUser("Giddy");
+            userAppService.AddUser("Dara");
             var allUsers = userAppService.GetUsers();
             Console.WriteLine($"Registered Users are: {string.Join(", ", allUsers)}");
             Console.ReadLine();
